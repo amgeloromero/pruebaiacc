@@ -38,3 +38,14 @@ Content-Type: application/json
   "name": "angelo romero",
   "carrera": "enfermeria"
 }
+
+
+### Para ejecutar test 
+npm test
+
+
+### codigo en produccion index
+https://pruebaiacc-production.up.railway.app/
+
+### codigo en produccion index de api
+https://pruebaiacc-production.up.railway.app/api/estudiantes

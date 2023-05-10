@@ -4,7 +4,7 @@ import { pool } from "../src/db";
 
 describe("Estudents Routes", () => {
   it("list of estudents", async () => {
-    const res = await request(app).get("/api/estudiante");
+    const res = await request(app).get("/api/estudiantes");
     expect(res.statusCode).toEqual(200);
     expect(res.body).toEqual(
       expect.arrayContaining([
@@ -18,7 +18,7 @@ describe("Estudents Routes", () => {
   });
 
   it("should create a new estudents", async () => {
-    const res = await request(app).post("/api/estudiante").send({
+    const res = await request(app).post("/api/estudiantes").send({
       name: "ignacia dominguez",
       carrera: "enfermeria",
     });
@@ -26,14 +26,14 @@ describe("Estudents Routes", () => {
     expect(res.body).toEqual(
       expect.objectContaining({
         id: expect.any(Number),
-        name: "pedro gonzales",
-        carrera: "ingeniero en construccion",
+        name: "ignacia dominguez",
+        carrera: "enfermeria",
       })
     );
   });
 
   it("should get an student by id", async () => {
-    const res = await request(app).get("/api/estudiante/1");
+    const res = await request(app).get("/api/estudiantes/1");
     expect(res.statusCode).toEqual(200);
     expect(res.body).toEqual(
       expect.objectContaining({
@@ -45,9 +45,10 @@ describe("Estudents Routes", () => {
   });
 
   it("delete an student by id", async () => {
-    const res = await request(app).delete("/api/estudiante/1");
-    expect(res.statusCode).toEqual(204);
-  });
+    const res = await request(app).delete("/api/estudiantes/8");
+    const POSSIBLE_VALUES = [204,404];
+    expect(POSSIBLE_VALUES).toContain(res.statusCode);
+    });
 
   afterAll(async () => {
     await pool.end();

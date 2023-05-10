@@ -11,10 +11,10 @@ CREATE TABLE estudiante (
 
 DESCRIBE estudiante;
 
-INSERT INTO estudiante values 
-  (1, 'angelo romero', "ingenieria en construccion"),
-  (2, 'pablo silva', "ingenieria en  electronica"),
-  (3, 'karen valdes', "ingenieria en informatica"),
+INSERT INTO estudiante(name,carrera) values 
+  ('angelo romero', "ingenieria en construccion"),
+  ('pablo silva', "ingenieria en  electronica"),
+  ('karen valdes', "ingenieria en informatica"),
  
 
 SELECT * FROM estudiante;
