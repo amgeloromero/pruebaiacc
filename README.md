@@ -1,14 +1,13 @@
-# pruebaiacc
+# Pruebaiacc
 # Se requiere node >=16.17
+
 ### git clone https://github.com/amgeloromero/pruebaiacc.git
 
 cd pruebaiacc
-
 npm install
-
 npm run dev
 
-
+### usar Postman o Thunder Client
 
 
 ### get estudiantes
