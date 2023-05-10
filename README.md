@@ -4,7 +4,9 @@
 ### git clone https://github.com/amgeloromero/pruebaiacc.git
 
 cd pruebaiacc
+
 npm install
+
 npm run dev
 
 ### usar Postman o Thunder Client
