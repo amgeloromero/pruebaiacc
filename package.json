@@ -1,0 +1,36 @@
+{
+  "name": "pruebaiacc",
+  "version": "1.0.0",
+  "description": "TEST de API REST PARA  IACC",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "pretest": "cross-env NODE_ENV=test jest --clearCache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amgeloromero/pruebaiacc.git"
+  },
+  "keywords": [],
+  "author": "ANGELO ROMERO P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amgeloromero/pruebaiacc/issues"
+  },
+  "homepage": "https://github.com/amgeloromero/pruebaiacc#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.5.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}

@@ -1,13 +1,3 @@
-# pruebaiacc
-# Se requiere node >=16.17
-git clone https://github.com/amgeloromero/pruebaiacc.git
-cd nodejs-mysql-restapi
-docker-compose up
-npm install
-npm run dev
-
-
-
 ### get estudiantes
 GET http://localhost:3000/api/estudiantes
 
@@ -29,5 +19,5 @@ Content-Type: application/json
 
 {
   "name": "angelo romero",
-  "carrera": "enfermeria"
+  "carrera": "informatica"
 }
