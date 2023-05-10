@@ -1,10 +1,13 @@
 # pruebaiacc
 # Se requiere node >=16.17
-git clone https://github.com/amgeloromero/pruebaiacc.git
-cd nodejs-mysql-restapi
-docker-compose up
-npm install
-npm run dev
+### git clone https://github.com/amgeloromero/pruebaiacc.git
+
+### cd pruebaiacc
+
+### npm install
+
+### npm run dev
+
 
 
 
